@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Art Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+<!-- this works to allow for only one boxed to get check w/ js below. -->
+<!-- need to combine with info on buttons that I have now (labels) -->
+
+
+<!-- name attribute is what gets used for the param in the controller -->
+
+
+<ul>
+
+    <input type="checkbox" name= "cat1" class ="check" id="cb1" />
+    <label for="cb1"><img src="https://source.unsplash.com/300x300/?modern" /></label>
+  
+  <input type="checkbox" name= "cat1" class ="check" id="cb2" />
+    <label for="cb2"><img src="https://source.unsplash.com/300x300/?african" /></label>
+    
+    <!-- name each set by cat 1, 2, 3 -8 so that I can pull data based on click? -->
+  
+</ul>
+
+<script>
+$(document).ready(function(){
+    $('.check').click(function() {
+        $('.check').not(this).prop('checked', false);
+    });
+});
+</script>
+
+
+			<p> want to put "required" for min number of boxes to check</p>
+			<!-- for buttons will change to modern v contempary -->
+			<label>
+
+</form>
+		<button type="button" href="/result" onclick="alert('Choices Submitted')">Submit</button>
+
+<a href ="/result">back to form</a>
+
+</body>
+</html>
